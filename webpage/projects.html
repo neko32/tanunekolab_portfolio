@@ -37,97 +37,94 @@
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-header">
-              <h3>高負荷APIサービス</h3>
-              <span class="project-tag">Python</span>
+              <h3>高可用・高スループットペイメントシステム</h3>
+              <span class="project-tag">Scala, AWS, K8s</span>
             </div>
             <p class="project-description">
-              マイクロサービスアーキテクチャを採用した高負荷対応のAPIサービス。
-              1日あたり数百万リクエストを処理可能なスケーラブルな設計を実現。
+              マイクロサービスアーキテクチャを採用しマルチリージョン・ホットスタンバイのペイメントシステム。
+              毎時全世界からの数百万リクエストを無遅延で処理可能なスケーラブルな設計を実現。
+              複数のペイメントプロバイダーのサポートとフォールバックも実装。
             </p>
             <ul class="project-features">
-              <li>レスポンスタイム &lt; 100ms</li>
-              <li>水平スケーリング対応</li>
-              <li>包括的な監視とログ管理</li>
+              <li>自動リージョンファイルオーバー・フェイルバック</li>
+              <li>複数ペイメントプロバイダーの併用・フォールバック</li>
+              <li>高負荷試験によるSLAの確約</li>
             </ul>
           </div>
 
           <div class="project-card">
             <div class="project-header">
-              <h3>リアルタイムデータ処理システム</h3>
-              <span class="project-tag">Go</span>
+              <h3>再請求スケジュール計算システム (スマートビリング)</h3>
+              <span class="project-tag">Scala, AWS, Pytorch</span>
             </div>
             <p class="project-description">
-              ストリーミングデータをリアルタイムで処理・分析するシステム。
-              低レイテンシと高スループットを両立したアーキテクチャを構築。
+              顧客の支払い失敗時の再請求スケジュールの最適化。静的ルール及びMLモデルを活用した動的スケジュール計算。
             </p>
             <ul class="project-features">
-              <li>リアルタイム処理エンジン</li>
-              <li>分散処理による高可用性</li>
-              <li>自動スケーリング機能</li>
+              <li>静的ルール評価エンジンおよびMLモデルとの連携の仕組みを構築</li>
+              <li>顧客の支払い回復時の傾向や特性などをデータ分析から抽出しモデルに反映</li>
+              <li>使用するルール・モデルのA/Bテスト評価フレームワークの実装</li>
             </ul>
           </div>
 
           <div class="project-card">
             <div class="project-header">
-              <h3>セキュアな認証システム</h3>
-              <span class="project-tag">Java</span>
+              <h3>仮想運用チームメンバーエージェント (Marie)</h3>
+              <span class="project-tag">Python, MCP, Langchain</span>
             </div>
             <p class="project-description">
-              OAuth 2.0とJWTを活用したセキュアな認証・認可システム。
-              マルチテナント対応と細かい権限管理を実現。
+              チャットボットインタフェースを通じ運用に関する様々な質問に回答し運用チームの負担を軽減。
+              様々なMCPツールを活用しモデルの知識を動的に拡張。
             </p>
             <ul class="project-features">
-              <li>OAuth 2.0 / OpenID Connect</li>
-              <li>多要素認証対応</li>
-              <li>セキュリティ監査ログ</li>
+              <li>Datadog, Databricks上のデータをMCP経由でモデルのコンテキストに提供</li>
+              <li>チームのイントラサポートサイトにチャットボットを統合</li>
+              <li>有用性評価のためのフィードバックフレームワークを策定</li>
             </ul>
           </div>
 
           <div class="project-card">
             <div class="project-header">
-              <h3>データ分析プラットフォーム</h3>
-              <span class="project-tag">Python</span>
+              <h3>別会社との大規模システム統合 (Disney, ESPN, Hulu, Hotstar)</h3>
+              <span class="project-tag">マネージメント</span>
             </div>
             <p class="project-description">
-              大規模データのETL処理と分析を自動化するプラットフォーム。
-              バッチ処理とストリーム処理の両方に対応。
+              買収・統合等のコーポレートイベントに伴う別会社との大規模システム統合。
             </p>
             <ul class="project-features">
-              <li>ETLパイプライン自動化</li>
-              <li>分散データ処理</li>
-              <li>可視化ダッシュボード</li>
+              <li>チームマージ・解散に伴う再編成に伴う知識継承・移管管理・ドキュメント化</li>
+              <li>他社・元他社ステークホルダーとの折衝やアライアンス構築</li>
+              <li>大規模データマイグレーション・データ統合の指揮・監視</li>
             </ul>
           </div>
 
           <div class="project-card">
             <div class="project-header">
-              <h3>クラウドネイティブアプリケーション</h3>
-              <span class="project-tag">Kubernetes</span>
+              <h3>MLモデルによるペイメント要求異常検知と通知システム</h3>
+              <span class="project-tag">Rust, Python, Keras</span>
             </div>
             <p class="project-description">
-              Kubernetes上で動作するクラウドネイティブなアプリケーション。
-              CI/CDパイプラインと自動デプロイメントを実装。
+              各支払いリクエスト受領時にMLモデルにより過去のトランザクション履歴を学習したモデルによりスコアを算出、異常度が閾値を超えた場合に通知。
             </p>
             <ul class="project-features">
-              <li>コンテナオーケストレーション</li>
-              <li>自動スケーリング</li>
-              <li>ブルーグリーンデプロイ</li>
+              <li>Kerasを用いたモデル構築・学習・評価</li>
+              <li>Sparkを用いたモデル学習用データの前処理及びデータパイプラインの構築</li>
+              <li>Rustベースの高速なモデル利用サーバーの構築</li>
             </ul>
           </div>
 
           <div class="project-card">
             <div class="project-header">
-              <h3>メッセージキューシステム</h3>
-              <span class="project-tag">RabbitMQ</span>
+              <h3>エラーメッセージ自動分類とキュー振り分けシステム</h3>
+              <span class="project-tag">Python, DBS, Pytorch</span>
             </div>
             <p class="project-description">
-              非同期処理とサービス間通信を実現するメッセージキューシステム。
-              高可用性とメッセージの確実な配信を保証。
+              DLQにメッセージ追加時DBSとレーベンシュタイン距離を用いたモデルによるエラーメッセージの自動分類を行い適切なチームへのエスカレーションのためにキューを選択
             </p>
             <ul class="project-features">
-              <li>非同期メッセージング</li>
-              <li>メッセージ永続化</li>
-              <li>障害時の自動リトライ</li>
+              <li>運用チームの手動分類業務を完全に自動化</li>
+              <li>PytorchのDBSCANを用いた教師無しクラスタリングによるエラーメッセージの自動分類</li>
+              <li>モデルの有用性評価テストベッドの構築</li>
             </ul>
           </div>
         </div>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Projects - Tanuneko.Lab (English)</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Header with background image -->
+  <header class="site-header" style="background-image: url('img/daichi_small.png');">
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-brand">Tanuneko Lab. Kazu Kusunoki - Engineering Manager + AI Engineer</div>
+        <ul class="nav-menu">
+          <li><a href="index_en.html">Home</a></li>
+          <li><a href="about_en.html">About</a></li>
+          <li><a href="projects_en.html" class="active">Professional Projects</a></li>
+          <li><a href="projects_personal_en.html">Personal Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <!-- Page header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Professional Projects</h1>
+        <p class="page-subtitle">A comprehensive overview of key professional achievements and technical leadership.</p>
+      </div>
+    </section>
+
+    <!-- Projects content -->
+    <section class="projects-content">
+      <div class="container">
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3>High-Availability, High-Throughput Payment System</h3>
+              <span class="project-tag">Scala, AWS, K8s</span>
+            </div>
+            <p class="project-description">
+              A multi‑region, hot‑standby payment platform built with a microservices architecture. 
+              Designed to process millions of requests per hour from around the world with near‑zero latency. 
+              Supports multiple payment providers with intelligent fallback mechanisms.
+            </p>
+            <ul class="project-features">
+              <li>Automated region failover and failback</li>
+              <li>Multi‑provider integration with fallback logic</li>
+              <li>SLA assurance through extensive load and stress testing</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Rebilling Schedule Optimization System</h3>
+              <span class="project-tag">Scala, AWS, Pytorch</span>
+            </div>
+            <p class="project-description">
+              A system that optimizes retry schedules when customer payments fail, combining static business rules with ML‑driven dynamic scheduling.
+            </p>
+            <ul class="project-features">
+              <li>Built a rule evaluation engine and ML integration framework</li>
+              <li>Extracted behavioral patterns from customer recovery data and incorporated them into the model</li>
+              <li>Implemented an A/B testing framework for rule/model evaluation</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Virtual Operations Team Member Agent (Marie)</h3>
+              <span class="project-tag">Python, MCP, Langchain</span>
+            </div>
+            <p class="project-description">
+              A chatbot‑based virtual operations assistant that answers operational questions and reduces team workload. 
+              Dynamically expands model knowledge using various MCP tools.
+            </p>
+            <ul class="project-features">
+              <li>Provided Datadog and Databricks data to the model via MCP</li>
+              <li>Integrated the chatbot into the team’s internal support portal</li>
+              <li>Designed a feedback framework to evaluate usefulness</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Large‑Scale Cross‑Company System Integration (Disney, ESPN, Hulu, Hotstar)</h3>
+              <span class="project-tag">Management</span>
+            </div>
+            <p class="project-description">
+              Led large‑scale system integration efforts during corporate events such as acquisitions and organizational restructuring.
+            </p>
+            <ul class="project-features">
+              <li>Managed knowledge transfer, documentation, and team restructuring during merges and dissolutions</li>
+              <li>Negotiated and built alliances with stakeholders across multiple companies</li>
+              <li>Directed and monitored large‑scale data migrations and system consolidation</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>ML‑Based Payment Request Anomaly Detection & Notification System</h3>
+              <span class="project-tag">Rust, Python, Keras</span>
+            </div>
+            <p class="project-description">
+              A real‑time anomaly detection system that scores each payment request using an ML model trained on historical transaction data, triggering alerts when thresholds are exceeded.
+            </p>
+            <ul class="project-features">
+              <li>Built, trained, and evaluated models using Keras</li>
+              <li>Developed Spark‑based preprocessing pipelines for training data</li>
+              <li>Implemented a high‑performance Rust inference server</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Automated Error Message Classification & Queue Routing System</h3>
+              <span class="project-tag">Python, DBS, Pytorch</span>
+            </div>
+            <p class="project-description">
+              Automatically classifies error messages added to the DLQ using DBSCAN and Levenshtein‑distance‑based models, routing them to the appropriate team.
+            </p>
+            <ul class="project-features">
+              <li>Fully automated manual error classification tasks</li>
+              <li>Applied PyTorch DBSCAN for unsupervised clustering of error messages</li>
+              <li>Built a testbed for evaluating model effectiveness</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Local Payment System Integration</h3>
+              <span class="project-tag">Scala, AWS, K8s</span>
+            </div>
+            <p class="project-description">
+              Unified diverse local payment methods and provider‑specific differences at the framework level to minimize integration lead time.
+            </p>
+            <ul class="project-features">
+              <li>Integrated Paypal, Klarna, iDeal, Mercado Pago, PayPay, NaverPay, Satispay, Blik, DCB, and more</li>
+              <li>Integrated device‑based payments such as Amazon Pay on Roku, Comcast, and Fire TV</li>
+              <li>Built a framework to avoid reinventing the wheel for each new payment method</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Large‑Scale System Launch (Disney+, ESPN+)</h3>
+              <span class="project-tag">Scala, AWS, Gatling</span>
+            </div>
+            <p class="project-description">
+              Implemented and executed high‑load performance tests for major platform launches. 
+              Addressed traffic spikes beyond autoscaling limits through pre‑scaling strategies.
+            </p>
+            <ul class="project-features">
+              <li>Built and iterated high‑load test suites using Gatling</li>
+              <li>Identified scaling limits and implemented pre‑scaling</li>
+              <li>Evaluated system resilience through chaos testing</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>SDLC Tool Evaluation & Adoption</h3>
+              <span class="project-tag">JIRA, Subversion, Teamcity</span>
+            </div>
+            <p class="project-description">
+              Introduced Atlassian tools (JIRA, Crucible, Confluence), TeamCity, and Subversion, and led migration from legacy systems.
+            </p>
+            <ul class="project-features">
+              <li>Migrated CVS → Subversion</li>
+              <li>Migrated Ant + CruiseControl → TeamCity</li>
+              <li>Transitioned from in‑house ticketing, document site and manual code reviews to JIRA/Confluence/Crucible</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Porting Code from Solaris to Modern Linux Kernels</h3>
+              <span class="project-tag">C++, G++, Valgrind</span>
+            </div>
+            <p class="project-description">
+              Ported legacy Solaris‑based code to Linux by migrating from a proprietary Solaris C++ compiler to G++.
+            </p>
+            <ul class="project-features">
+              <li>Migrated from Solaris‑specific compiler to G++</li>
+              <li>Identified and resolved runtime behavioral differences</li>
+              <li>Ensured backward/forward compatibility during multi‑phase rollout</li>
+            </ul>
+          </div>
+
+        <!-- プロジェクト ここまで -->
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Kazuhiro Kusunoki. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

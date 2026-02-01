@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人用プロジェクト - Tanuneko.Lab</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Header with background image -->
+  <header class="site-header" style="background-image: url('img/shirakaba.jpg');">
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-brand">Tanuneko Lab. Kazu Kusunoki - Engineering Manager + AI Engineer</div>
+        <ul class="nav-menu">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html">自己紹介</a></li>
+          <li><a href="projects.html">業務用プロジェクト</a></li>
+          <li><a href="projects_personal.html" class="active">個人用プロジェクト</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <!-- Page header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">個人用プロジェクト</h1>
+      </div>
+    </section>
+
+    <!-- Projects content -->
+    <section class="projects-content">
+      <div class="container">
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3>温度モニタリング, 分析 & 通知システム (Tempmon)</h3>
+              <span class="project-tag">LMM, Python, N8N</span>
+            </div>
+            <p class="project-description">
+              Raspberry PI4のカメラから取得した温度・湿度データをLLMを用いて解析。
+              分析結果をSlackに通知。フローのオーケストレーションにN8Nを使用。
+              <a href="https://github.com/neko32/tempmon" target="_blank" rel="noopener noreferrer">Tempmon GitHub</a>
+            </p>
+            <ul class="project-features">
+              <li>LLMを用いた温度・湿度データの解析</li>
+              <li>N8Nを用いたフローのオーケストレーション</li>
+              <li>Raspberry PI上にカメラサーバを構築</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>C++ランタイム環境フレームワーク (Nekokan)</h3>
+              <span class="project-tag">C++23, Makefile, CLang</span>
+            </div>
+            <p class="project-description">
+              C++23のラピッド開発・デプロイを目的としたランタイム環境フレームワーク。
+              <a href="https://github.com/neko32/nekokan" target="_blank" rel="noopener noreferrer">Nekokan GitHub</a>
+            </p>
+            <ul class="project-features">
+              <li>3rd Partyライブラリ・自作ライブラリのビルド・パッケージング及びデプロイ</li>
+              <li>コマンドラインによるスピーディな環境セットアップ</li>
+              <li>Makefileのテンプレート生成による迅速な新規C++23プロジェクトの立ち上げ</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>LLMラッパー (Sirochatora)</h3>
+              <span class="project-tag">Python, MCP, Langchain</span>
+            </div>
+            <p class="project-description">
+              Open AI APIを用いるLLMのラッパー。Langchainを用いたモデルの利用やエージェントワークフロー実装の支援を目的とする。
+              <a href="https://github.com/neko32/sirochatora" target="_blank" rel="noopener noreferrer">Sirochatora GitHub</a>
+            </p>
+            <ul class="project-features">
+              <li>Zeroshot CoT, レシプロキャルランクフュージョンなどといったテクニックの実装をハンディに提供</li>
+              <li>RAGに関連する初作業の実装支援</li>
+              <li>マスコットキャラクター実装支援</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>JSON Config Loader for C++23</h3>
+              <span class="project-tag">C++23, JSON, Makefile</span>
+            </div>
+            <p class="project-description">
+              C++23バイナリで構造化JSONファイルを読み込みコンフィグデータをオンメモリで保持するユーティリティ。
+              <a href="https://github.com/neko32/json-config-loader" target="_blank" rel="noopener noreferrer">JSON Config Loader GitHub</a>
+            </p>
+            <ul class="project-features">
+              <li>静的・動的ライブラリの依存性無しに組み込み可能</li>
+              <li>Unixディレクトリパス風の記述による階層化されたコンフィグデータへのアクセス</li>
+              <li>超軽量高速なコンフィグデータの取得</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>数独ソルバー WebAssembly版</h3>
+              <span class="project-tag">Rust, WebAssembly, WASM</span>
+            </div>
+            <p class="project-description">
+              Rustで実装した数独ソルバーをWebAssemblyにコンパイルしWebブラウザ上で動作するようにしたもの。
+              <a href="https://github.com/neko32/sudoku-solver-wasm" target="_blank" rel="noopener noreferrer">Sudoku Solver WASM GitHub</a>
+            </p>
+            <ul class="project-features">
+              <li>Web UIによる数独問題の入力・解答の表示</li>
+              <li>WASMを用いたWeb Assemblyの実装</li>
+              <li>高難易度数独問題でも数秒以内に解答率100%で解答可能</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>アラビア数字 ⇔ ローマ数字 変換ゲーム</h3>
+              <span class="project-tag">Rust</span>
+            </div>
+            <p class="project-description">
+              アラビア数字からローマ数字への変換を行い、セットしたラウンド分正答率を競うゲーム。
+              <a href="https://github.com/neko32/romanconv" target="_blank" rel="noopener noreferrer">RomanConv GitHub</a>
+            </p>
+            <ul class="project-features">
+              <li>CUIベースのゲーム実行環境</li>
+              <li>アラビア数字からローマ数字への変換アルゴリズムを実装</li>
+              <li>Rustによる実装</li>
+            </ul>
+          </div>
+
+
+        <!-- プロジェクト ここまで -->
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Kazuhiro Kusunoki. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

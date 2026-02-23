@@ -39,6 +39,50 @@
 
           <div class="project-card">
             <div class="project-header">
+              <h3>複雑なプログラム可能なタイマー作成・管理サービス (Nekotimer)</h3>
+              <span class="project-tag">Rust, WebAssembly, Trunk</span>
+            </div>
+            <p class="project-description">
+              RustによるYew/TrunkベースのWebAssemblyとBackend APIで構成。<br/>
+              ClaudeとCursor上において5名の精鋭からなるtanuneko.lab バーチャルエンジニア達によって開発・運用されている。
+              <br/>
+              <a href="https://github.com/neko32/nekotimer" target="_blank" rel="noopener noreferrer">Nekotimer</a>
+            </p>
+            <ul class="project-features">
+              <li>ドラッグ&ドロップによる簡単操作で複雑なタイマープログラムを作成可能</li>
+              <li>複雑に構成されたタイマーの実行</li>
+              <li>待機とインターバル有り無しの繰り返し機能をサポート</li>
+            </ul>
+            <div class="project-images">
+              <img src="img/nekotimer.png" alt="Nekotimer" class="project-img">
+              <img src="img/blockbuilder.png" alt="Block Builder" class="project-img">
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>エージェント 指示ファイルインスタンス生成ツール (Projspec Builder)</h3>
+              <span class="project-tag">Rust, WebAssembly, Trunk</span>
+            </div>
+            <p class="project-description">
+              TKInterによるPythonのシンプルなGUIアプリケーション。<br/>
+              ClaudeとCursor上において4名の精鋭からなるtanuneko.lab バーチャルエンジニア達によって開発・運用されている。
+              <br/>
+              <a href="https://github.com/neko32/nekotimer" target="_blank" rel="noopener noreferrer">Nekotimer</a>
+            </p>
+            <ul class="project-features">
+              <li>ベース指示書モデルとプロジェクトの基本情報を入力しプロジェクト用にカスタマイズされた指示書インスタンスを生成</li>
+              <li>TDD開発により98%コードカバレッジとRuff無違反を達成</li>
+              <li>バーチャルセキュリティエンジニアメンバーによる指示・監督の元Pydanticバリデーション等も実装</li>
+            </ul>
+            <div class="project-images">
+              <img src="img/projspec_builder.png" alt="projspec_builder" class="project-img">
+              <img src="img/yuru_proj_done.png" alt="" class="project-img">
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
               <h3>音楽データセンチメント検索 (Nekokan Music Feeling)</h3>
               <span class="project-tag">Python, ChromaDB, RAG</span>
             </div>
@@ -69,6 +113,10 @@
               <li>完全エージェントチームベースのエージェント駆動開発 + TDD</li>
               <li>Nginxを用いたAPI層へのリバースプロキシ</li>
             </ul>
+            <div class="project-images">
+              <img src="img/nekokan_music.png" alt="Nekokan Music" class="project-img">
+              <img src="img/nekokan_music2.png" alt="Nekokan Music" class="project-img">
+            </div>
           </div>
 
           <div class="project-card">
@@ -86,6 +134,10 @@
               <li>N8Nを用いたフローのオーケストレーション</li>
               <li>Raspberry PI上にカメラサーバを構築</li>
             </ul>
+            <div class="project-images">
+              <img src="img/tempmon_slack.png" alt="Tempmon Slack Notification" class="project-img">
+              <img src="img/tempmon_ai_word.png" alt="Tempmon AI Analysis" class="project-img">
+            </div>
           </div>
 
           <div class="project-card">
@@ -101,6 +153,9 @@
               <li>レスポンスのContent-Typeを動的に判定して結果表示を変化させるUI実装</li>
               <li>簡潔なJSONによるAPIの定義とAPI実行用フォームの動的生成</li>
             </ul>
+            <div class="project-images">
+              <img src="img/tcat.png" alt="TCAT" class="project-img">
+            </div>
           </div>
 
           <div class="project-card">
@@ -212,5 +267,29 @@
       <p>&copy; 2026 Kazuhiro Kusunoki. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Lightbox modal -->
+  <div class="lightbox" role="dialog" aria-hidden="true">
+    <button class="close" aria-label="閉じる">&times;</button>
+    <img src="" alt="" />
+  </div>
+
+  <script>
+    (function(){
+      const lb = document.querySelector('.lightbox');
+      if(!lb) return;
+      const lbImg = lb.querySelector('img');
+      const closeBtn = lb.querySelector('.close');
+      function open(src, alt){ lbImg.src = src; lbImg.alt = alt || ''; lb.classList.add('open'); document.body.style.overflow = 'hidden'; }
+      function close(){ lb.classList.remove('open'); document.body.style.overflow = ''; }
+      document.querySelectorAll('.project-img').forEach(img => {
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', () => open(img.dataset.large || img.src, img.alt));
+      });
+      lb.addEventListener('click', (e)=>{ if(e.target === lb) close(); });
+      closeBtn.addEventListener('click', close);
+      document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') close(); });
+    })();
+  </script>
 </body>
 </html>

@@ -39,6 +39,50 @@
 
           <div class="project-card">
             <div class="project-header">
+              <h3>Programmable Complex Timer Builder & Management (Nekotimer)</h3>
+              <span class="project-tag">Rust, WebAssembly, Trunk</span>
+            </div>
+            <p class="project-description">
+              A WebAssembly‑based tool for creating and managing complex timers with a user‑friendly interface. <br/>
+              Fully developed and maintained by a virtual team of five elite engineers within the tanuneko.lab ecosystem, operating on platforms such as Claude and Cursor.
+              <br/>
+              <a href="https://github.com/neko32/nekotimer" target="_blank" rel="noopener noreferrer">Nekotimer</a>
+            </p>
+            <ul class="project-features">
+              <li>Easy to use interface for creating and managing complex timers (Drag and drop support)</li>
+              <li>Complex timer program execution from top block to bottom timer blocks</li>
+              <li>Wait and Repeat with/without interval features are supported</li>
+            </ul>
+            <div class="project-images">
+              <img src="img/nekotimer.png" alt="Nekotimer" class="project-img">
+              <img src="img/blockbuilder.png" alt="Block Builder" class="project-img">
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Agent Direction File Instance Generator (Projspec Builder)</h3>
+              <span class="project-tag">Rust, WebAssembly, Trunk</span>
+            </div>
+            <p class="project-description">
+              A simple GUI application built with TKInter in Python.<br/>
+              Developed and maintained by a virtual team of four elite engineers within the tanuneko.lab ecosystem, operating on platforms such as Claude and Cursor.<br/>
+              <br/>
+              <a href="https://github.com/neko32/projspec_builder" target="_blank" rel="noopener noreferrer">Projspec Builder</a>
+            </p>
+            <ul class="project-features">
+              <li>Generates customized instruction instances for projects</li>
+              <li>Achieves 98% code coverage and Ruff compliance through TDD development</li>
+              <li>Implemented Pydantic validation and other security measures by a virtual security engineer member</li>
+            </ul>
+            <div class="project-images">
+              <img src="img/projspec_builder.png" alt="projspec_builder" class="project-img">
+              <img src="img/yuru_proj_done.png" alt="" class="project-img">
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
               <h3>Sentiment-Based Music Discovery (Nekokan Music Feeling)</h3>
               <span class="project-tag">Python, ChromaDB, RAG</span>
             </div>
@@ -68,6 +112,10 @@
               <li>TDD + Agent-Driven Development, utilizing Claude and Cursor</li>
               <li>Deployed with Nginx acting as a reverse proxy to the backend API layer</li>
             </ul>
+            <div class="project-images">
+              <img src="img/nekokan_music.png" alt="Nekokan Music" class="project-img">
+              <img src="img/nekokan_music2.png" alt="Nekokan Music" class="project-img">
+            </div>
           </div>
 
           <div class="project-card">
@@ -85,6 +133,10 @@
               <li>Workflow orchestration using N8N</li>
               <li>Camera server deployed on Raspberry Pi</li>
             </ul>
+            <div class="project-images">
+              <img src="img/tempmon_slack.png" alt="Tempmon Slack Notification" class="project-img">
+              <img src="img/tempmon_ai_word.png" alt="Tempmon AI Analysis" class="project-img">
+            </div>
           </div>
 
           <div class="project-card">
@@ -100,6 +152,9 @@
               <li>UI that dynamically adjusts based on response Content‑Type</li>
               <li>Simple JSON‑based API definitions with auto‑generated execution forms</li>
             </ul>
+              <div class="project-images">
+                <img src="img/tcat.png" alt="TCAT" class="project-img">
+              </div>
           </div>
 
           <div class="project-card">
@@ -213,4 +268,29 @@
     </div>
   </footer>
 </body>
-</html>
+    <!-- Lightbox modal -->
+    <div class="lightbox" role="dialog" aria-hidden="true">
+      <button class="close" aria-label="Close">&times;</button>
+      <img src="" alt="" />
+    </div>
+
+    <script>
+      (function(){
+        const lb = document.querySelector('.lightbox');
+        if(!lb) return;
+        const lbImg = lb.querySelector('img');
+        const closeBtn = lb.querySelector('.close');
+        function open(src, alt){ lbImg.src = src; lbImg.alt = alt || ''; lb.classList.add('open'); document.body.style.overflow = 'hidden'; }
+        function close(){ lb.classList.remove('open'); document.body.style.overflow = ''; }
+        document.querySelectorAll('.project-img').forEach(img => {
+          img.style.cursor = 'zoom-in';
+          img.addEventListener('click', () => open(img.dataset.large || img.src, img.alt));
+        });
+        lb.addEventListener('click', (e)=>{ if(e.target === lb) close(); });
+        closeBtn.addEventListener('click', close);
+        document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') close(); });
+      })();
+    </script>
+  
+  </body>
+  </html>

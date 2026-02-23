@@ -36,6 +36,40 @@
     <section class="projects-content">
       <div class="container">
         <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Sentiment-Based Music Discovery (Nekokan Music Feeling)</h3>
+              <span class="project-tag">Python, ChromaDB, RAG</span>
+            </div>
+            <p class="project-description">
+              A semantic search engine designed to discover music through emotional and sensory keywords such as "joyful," "bright," or "melancholic." This system utilizes batch processing for incremental embedding of music metadata managed within the Nekokan Music ecosystem.<br/>
+              Note: Source code is currently private but is scheduled for release on GitHub in the near future.
+            </p>
+            <ul class="project-features">
+              <li>Currently undergoing experimental refinement of document chunking, re-ranking algo and keyword selection for embeddings</li>
+              <li>Supports delta-based embedding updates</li>
+              <li>Leverages ChromaDB for efficient storage and high-speed retrieval of high-dimensional data</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Music Metadata Management Service (Nekokan Music)</h3>
+              <span class="project-tag">Rust, Web Assembly, Yew</span>
+            </div>
+            <p class="project-description">
+              A robust music metadata management platform engineered for high performance and reliability using a full-stack Rust architecture.<br/>
+              Developed and maintained by a virtual teams of five elite engineers within the tanuneko.lab ecosystem, operating on platforms such as Claude and Cursor.<br/>
+              <a href="https://github.com/neko32/nekokan_music" target="_blank" rel="noopener noreferrer">Nekokan Music GitHub</a>
+            </p>
+            <ul class="project-features">
+              <li>Features a high-performance WebAssembly frontend with Yaw and Trunk, seamlessly integrated with a Rust-based API</li>
+              <li>TDD + Agent-Driven Development, utilizing Claude and Cursor</li>
+              <li>Deployed with Nginx acting as a reverse proxy to the backend API layer</li>
+            </ul>
+          </div>
+
           <div class="project-card">
             <div class="project-header">
               <h3>Temperature Monitoring, Analysis & Notification System (Tempmon)</h3>

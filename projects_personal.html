@@ -36,6 +36,41 @@
     <section class="projects-content">
       <div class="container">
         <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>音楽データセンチメント検索 (Nekokan Music Feeling)</h3>
+              <span class="project-tag">Python, ChromaDB, RAG</span>
+            </div>
+            <p class="project-description">
+              Nekokan Musicで管理している音楽データをバッチ処理で差分埋め込みし、"楽しい”, "明るい", "好き"などといった感覚・感情的キーワードでマッチする音楽を探す。</br>
+              RAGの要領で、ユーザのクエリと楽曲の埋め込みベクトルの類似度を算出し、リランカーや埋め込みのワード選別等を鋭意実験中
+              コードは現在非公開だが、近いうちにGitHub上で公開予定。
+            </p>
+            <ul class="project-features">
+              <li>埋め込みにおけるドキュメントの最適化</li>
+              <li>差分埋め込みのサポート</li>
+              <li>ChromaDBへの埋め込み</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>音楽メタデータ管理サービス (Nekokan Music)</h3>
+              <span class="project-tag">Rust, Web Assembly, Yew</span>
+            </div>
+            <p class="project-description">
+              RustとWeb Assemblyを用いて実装した、音楽メタデータ管理サービス。YewとTrunkを用いたWAフロントエンドと、Rustで実装されたバックエンドから構成される。</br>
+              ClaudeとCursor上において5名の精鋭からなるtanuneko.lab バーチャルエンジニア達によって開発・運用されている。</br></br>
+              <a href="https://github.com/neko32/nekokan_music" target="_blank" rel="noopener noreferrer">Nekokan Music GitHub</a>
+            </p>
+            <ul class="project-features">
+              <li>YewとTrunkを用いたWAフロントエンドとRust API</li>
+              <li>完全エージェントチームベースのエージェント駆動開発 + TDD</li>
+              <li>Nginxを用いたAPI層へのリバースプロキシ</li>
+            </ul>
+          </div>
+
           <div class="project-card">
             <div class="project-header">
               <h3>温度モニタリング, 分析 & 通知システム (Tempmon)</h3>
